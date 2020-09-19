@@ -1,0 +1,9 @@
+%h1 Which drinks can you make?
+
+= form_with scope: :drinks, local: true do |form|
+  %p
+    = form.label :Ingredients
+    %br/
+    = form.text_field :ingredients 
+  %p
+    = form.submit
