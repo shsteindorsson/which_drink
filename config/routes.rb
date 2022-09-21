@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'drinks/index'
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  root 'drinks#index'
+  # Defines the root path route ("/")
+  # root "articles#index"
 end
