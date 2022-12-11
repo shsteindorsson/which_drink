@@ -1,5 +1,4 @@
-require 'faraday'
-require 'json'
+# frozen_string_literal: true
 
 namespace :cocktails do
   desc 'remove empty fields from portions'
