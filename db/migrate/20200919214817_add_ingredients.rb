@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddIngredients < ActiveRecord::Migration[6.0]
   def change
     create_table :cocktails do |t|
@@ -13,12 +15,6 @@ class AddIngredients < ActiveRecord::Migration[6.0]
       t.string :name
       t.text :description
       t.boolean :alcohol
-    end
-
-    create_table :cocktail_ingredients, id: false do |t|
-      t.string :portion
-      t.belongs_to :cocktails
-      t.belongs_to :ingredients
     end
 
     add_index :cocktails, :name
